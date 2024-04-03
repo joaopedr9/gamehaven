@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(137, 186, 241), rgb(240, 235, 239));
+            text-shadow: 2px 2px 4px rgb(49, 130, 177);
+        }
+
+        /* div {
+            background-color: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 80px;
+            border-radius: 20px;
+            color: aliceblue;
+
+        } */
+
+        main {
+            background-color: rgba(0, 0, 0, 0.9);
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            padding: 80px;
+            border-radius: 20px;
+            color: aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+
+        input {
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+        }
+
+        button {
+            background-color: dodgerblue;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+
+        textarea {
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 15px;
+
+        }
+
+        .a {
+            height: 20px;
+            display: block;
+            /* align-items: center; */
+            width: 300px;
+            border-radius: 20px;
+            border: 4px solid black;
+
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container nav ul li a {
+            color: #cc1668;
+            text-decoration: none;
+            transition: .5s;
+        }
+
+        .container nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container nav li {
+            padding: 20px;
+            list-style: none;
+        }
+
+        .container nav li a:hover {
+            color: aqua;
+            text-decoration: underline;
+        }
+
+        .login {
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.40);
+            text-align: center;
+            background-color: white;
+            padding: 1em;
+            border-radius: 10px;
+            color: #cc1668;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="login">Faça seu login</h1>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Loja</a></li>
+                    <li><a href="lojacontatos.html">Contatos</a></li>
+                    <li><a href="serviços.html">Serviços</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <selection name="botao" id="contato form">
+            <h1>Entre em contato</h1>
+            <div class="div2">
+                <form action="mailto:ta0289767@gmail.com" method="post" enctype="text/plain">
+                    <label for="nome" class="nome"></label>
+                    <input class="a" type="text" name="nome" id="nome" required placeholder="Nome">
+
+                    <label for="email" class="email"></label>
+                    <input class="a" type="email" name="email" id="email" required placeholder="Email">
+
+                    <label for="mensagem" class="mensagem"></label>
+                    <textarea class="a" name="mensagem" id="mensagem" cols="30" rows="4" required
+                        placeholder="Mensagem"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+        </selection>
+    </main>
+</body>
+
+</html>
